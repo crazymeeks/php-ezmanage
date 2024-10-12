@@ -1,0 +1,21 @@
+services:
+  php-ezmanage:
+    image: php-ezmanage:latest
+    container_name: php-ezmanage
+    volumes:
+       - ./:/var/www/html
+       - ./nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      default:
+        ipv4_address: ${CONTAINER_IP}
+    tty: true
+    stdin_open: true
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    dns:
+      - 8.8.8.8
+networks:
+  default:
+      name: devnetwork
+      external: true

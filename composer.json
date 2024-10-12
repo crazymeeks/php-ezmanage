@@ -1,0 +1,17 @@
+{
+    "name": "crazymeeks/php-ezmanage",
+    "description": "A PHP package for ezManage",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Crazymeeks\\PhpEzmanage\\": "src/",
+            "Crazymeeks\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "~8.5.0",
+        "mockery/mockery": "^1.6"
+    }
+}
