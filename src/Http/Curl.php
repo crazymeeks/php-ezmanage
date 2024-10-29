@@ -172,7 +172,6 @@ class Curl
         curl_close($ch);
 
         list($headers, $body) = explode("\r\n\r\n", $response, 2);
-        
         return $this->send_response($body);
     }
 

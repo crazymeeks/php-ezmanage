@@ -267,7 +267,7 @@ class EzManage
     {
         
         $query = $query->get();
-
+        
         $this->curl->to($this->final_endpoint())
                          ->with_headers($this->get_required_headers())
                          ->with_data([
