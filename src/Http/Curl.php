@@ -180,8 +180,8 @@ class Curl
         if ($this->is_json_decodable($body)) {
             if (strpos($body, 'errors')) {
                 return new Response([
-                    'message' => $body,
-                    'data' => null,
+                    'message' => 'Oopps! Error. Please see response body',
+                    'data' => $body,
                     'status_code' => $this->get_http_response_code(),
                     'success' => false,
                 ]);

@@ -23,7 +23,7 @@ class EzManageTest extends TestCase
         parent::setUp();
 
         $this->orderQuery = new OrderQuery();
-        $orderUuid = "dafdaf";
+        $orderUuid = "1234";
         $this->orderQuery->setData($orderUuid);
         $this->orderQuery = $this->orderQuery;
 
